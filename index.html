@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Valentina - Mis XV Años " />
+    <meta property="og:description"
+        content="¡La cuenta regresiva ha comenzado! Descubre los detalles y confirma tu asistencia." />
+
+    <meta property="og:image" content="https://lunofest.github.io/15Valentina241026/assets/imagenes/miniatura.png" />
+    <meta property="og:url" content="https://lunofest.github.io/15Valentina241026/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css?v7">
+    <link rel="stylesheet" href="css/normalize.css?v7">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <script src="js/cache.js"></script>
+    <script src="js/service-worker.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+    <title>Mis 15 años</title>
+</head>
+
+<body>
+
+
+
+    <header class="header">
+
+
+        
+        <section class="musica">
+            <h2 class="musica_texto" id="titulo_estado">Toca play para reproducir la canción</h2>
+
+            <div class="musica_barra_contenedor">
+                <input type="range" class="musica_barra" id="barra_progreso" value="0" min="0" max="100">
+            </div>
+
+            <div class="musica_controles">
+
+                <button class="musica_boton" id="btn_anterior">
+                    <svg class="musica_icono" viewBox="0 0 24 24">
+                        <path d="M11 19V5l-11 7 11 7zm0-14v14l11-7-11-7z" style="display:none;" />
+                        <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
+                    </svg>
+                </button>
+
+                <button class="musica_boton musica_boton_play" id="btn_play">
+                    <svg class="musica_icono" id="icono_play" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                    <svg class="musica_icono" id="icono_pause" viewBox="0 0 24 24" style="display: none;">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                    </svg>
+                </button>
+
+                <button class="musica_boton" id="btn_siguiente">
+                    <svg class="musica_icono" viewBox="0 0 24 24">
+                        <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" />
+                    </svg>
+                </button>
+            </div>
+
+            <audio id="audio_elemento" src="assets/musica.mp3"></audio>
+        </section>
+    </header>
+
+    <main>
+
+        <div class="flecha">
+
+            <img class="header__arrow" src="assets/vectores/arrow.svg" alt="">
+            <p class="flecha__text">Desliza</p>
+        </div>
+
+
+    
+        <img class="header__img" src="assets/imagenes/vectorTOP.webp" alt="">
+       
+
+        <div class="fondo">
+            <video src="assets/body.mp4" class="fondo__img" autoplay muted loop playsinline></video>
+        </div>
+
+        <section class="frase">
+
+            <img class="frase__star" src="assets/imagenes/star.webp" alt="">
+
+            <h5 class="frase__paragraph">
+                "Hace 15 años comenzó una pequeña historia, llena de sueños, ilusiones y momentos 
+                que fueron formando quien hoy soy. <br> El tiempo pasó, crecí y aquel sueño que alguna vez 
+                imaginé está a punto de hacerse realidad. <br> Hoy quiero abrir las puertas de 
+                una nueva etapa y compartir esta noche tan especial con las personas que forman parte de mi vida."
+            </h5>
+
+        </section>
+
+
+        <section class="section_fecha">
+            <h2 class="section_fecha_mes">OCTUBRE</h2>
+            <div class="section_fecha_contenedor">
+                <div class="section_fecha_bloque">
+                    <div class="section_fecha_lineas"></div>
+                    <span class="section_fecha_texto">SÁBADO</span>
+                    <div class="section_fecha_lineas"></div>
+                </div>
+
+                <div class="section_fecha_numero">24</div>
+
+                <div class="section_fecha_bloque">
+                    <div class="section_fecha_lineas"></div>
+                    <span class="section_fecha_texto">2026</span>
+                    <div class="section_fecha_lineas"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="temporizador">
+
+            <img class="temporizador__star" src="assets/imagenes/star.webp" alt="">
+            <img class="temporizador__star2" src="assets/imagenes/star.webp" alt="">
+
+            <div class="temporizador_ola temporizador_ola_top">
+                <svg class="temporizador_ola_svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path class="temporizador_ola_relleno"
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                    </path>
+                </svg>
+            </div>
+
+            <h2 class="temporizador_titulo">Faltan</h2>
+
+            <div class="temporizador_marco">
+                <div class="temporizador_marco_esquinas"></div>
+
+                <div class="temporizador_bloque">
+                    <span class="temporizador_numero" id="dias">00</span>
+                    <span class="temporizador_etiqueta">DÍAS</span>
+                </div>
+
+                <div class="temporizador_separador">:</div>
+
+                <div class="temporizador_bloque">
+                    <span class="temporizador_numero" id="horas">00</span>
+                    <span class="temporizador_etiqueta">HORAS</span>
+                </div>
+
+                <div class="temporizador_separador">:</div>
+
+                <div class="temporizador_bloque">
+                    <span class="temporizador_numero temporizador_numero_destacado" id="minutos">00</span>
+                    <span class="temporizador_etiqueta">MINUTOS</span>
+                </div>
+
+
+            </div>
+
+            <div class="temporizador_ola temporizador_ola_bottom">
+                <svg class="temporizador_ola_svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path class="temporizador_ola_relleno"
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                    </path>
+                </svg>
+            </div>
+
+        </section>
+
+
+        <section  class="fotos">
+            <h3 class=" fotos__title" data-aos="fade-up">Mi Book de Fotos</h3>
+
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/uno.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/dos.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/tres.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/cuatro.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/cinco.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/seis.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/siete.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/ocho.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/nueve.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/diez.webp" />
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="contenedor donde">
+
+            <img class="contenedor__icon" src="assets/imagenes/iconos/iglesia.webp" alt="">
+            <h3 class="contenedor__title">MISA</h3>
+            <h5 class="contenedor__direccion">Capilla Nuestra Señora del Tránsito <br>Atahona, Tucumán</h5>
+            <h5 class="contenedor__hora">20 de Octubre del 2026 <br> 17:00hs</h5>
+            <a class="contenedor__button" href="#">Ver ubicación</a>
+
+        </section>
+
+
+        <section class="contenedor donde">
+
+            <img class="contenedor__icon" src="assets/imagenes/iconos/fiesta.webp" alt="">
+            <h3 class="contenedor__title">FIESTA</h3>
+            <h5 class="contenedor__direccion">Cancha (Ampata)</h5>
+            <h5 class="contenedor__hora">24 de Octubre del 2026 <br>21:15hs </h5>
+            <a class="contenedor__button" href="https://maps.app.goo.gl/FYsgN3s8VMedZnQu7">Ver ubicación</a>
+
+        </section>
+
+         <section  class="contenedor itinerario">
+            <h3 class="contenedor__title">ITINERARIO</h3>
+            <h5 class="contenedor__direccion">24 de Octubre del 2026</h5>
+            <div class="itinerario__lista">
+                <div class="itinerario__item">
+                    <span class="itinerario__texto">Ingreso Invitados</span>
+                    <span class="itinerario__hora">21:15</span>
+                </div>
+                <div class="itinerario__item">
+                    <span class="itinerario__texto">Mi Ingreso</span>
+                    <span class="itinerario__hora">22:00</span>
+                </div>
+                <div class="itinerario__item">
+                    <span class="itinerario__texto">Cena</span>
+                    <span class="itinerario__hora">22:30</span>
+                </div>
+                <div class="itinerario__item">
+                    <span class="itinerario__texto">Inicio del Baile</span>
+                    <span class="itinerario__hora">01:00</span>
+                </div>
+                <div class="itinerario__item">
+                    <span class="itinerario__texto">Fin de la Fiesta</span>
+                    <span class="itinerario__hora">06:00</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="agradecimiento block glow contenedor" data-aos="fade-up">
+
+            <div class="agradecimiento__contenedor">
+                <p class="parrafo parrafo--agradecimiento">
+                    "Deseo expresar mi profundo agradecimiento a todos mis familiares y amigos que me acompañan en esta etapa, y quiero destacar el valioso
+                    sacrificio realizado especialmente por mis padres y padrinos, cuyo apoyo fué fundamental para hacer realidad
+                    este momento tan significativo en mi vida"
+                </p>
+
+                <!-- ---- padres ----- -->
+                <div class="agradecimiento__container">
+                    <h4 class="agradecimiento__title">Mis Padres</h4>
+                    <div class="agradecimiento__fotos" data-aos="fade-right">
+
+                        <div class="agradecimiento__picture">
+
+                           
+                            <h5 class="agradecimiento__name">Diego Lugones</h5>
+                        </div>
+
+                        <div class="agradecimiento__picture">
+                            
+                            <h5 class="agradecimiento__name">Jesica Medina</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ---- padrinos ----- -->
+
+                <div class="agradecimiento__container">
+                    <h4 class="agradecimiento__title agradecimiento__title--active">Mis Padrinos</h4>
+                 
+                    <div class="agradecimiento__fotos" data-aos="fade-left">
+
+                        <div class="agradecimiento__picture">
+
+                            
+                            <h5 class="agradecimiento__name">Ricardo Gonzalez</h5>
+                        </div>
+
+                        <div class="agradecimiento__picture">
+                           
+                            <h5 class="agradecimiento__name">Débora Medina</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="agradecimiento__fotos" data-aos="fade-left">
+
+                        <div class="agradecimiento__picture">
+
+                            
+                            <h5 class="agradecimiento__name">Néstor Medina</h5>
+                        </div>
+
+                        <div class="agradecimiento__picture">
+                           
+                            <h5 class="agradecimiento__name">Pamela Herrera</h5>
+                        </div>
+                        
+                    </div>
+                     <div class="agradecimiento__fotos" data-aos="fade-left">
+
+                        <div class="agradecimiento__picture">
+
+                            
+                            <h5 class="agradecimiento__name">Santiago Medina</h5>
+                        </div>
+
+                        <div class="agradecimiento__picture">
+                           
+                            <h5 class="agradecimiento__name">Francisco Medinas</h5>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section class="contenedor dresscode">
+
+            <img class="contenedor__icon" src="assets/imagenes/iconos/drescode.webp" alt="">
+            <h3 class="contenedor__title">DRESSCODE: <br>Elegante Sport</h3>
+            <h5 class="contenedor__direccion" >COLOR RESERVADO PARA LA QUINCEAÑERA: AZUL</h5>
+
+            <div class="contenedor__colores" style="display:none">
+                <div class="contenedores__item"></div>
+                <div class="contenedores__item contenedores__item2"></div>
+            </div>
+
+            <button style="display:none" class="contenedor__button" id="openLightbox">Ver ejemplo</button>
+
+
+        </section>
+
+        <section class="contenedor playlist">
+
+            <img class="contenedor__icon" src="assets/imagenes/iconos/musica.webp" alt="">
+            <h3 class="contenedor__title">¿QUÉ CANCION NO PUEDE FALTAR EN MI FIESTA?</h3>
+
+            <div class="contenedor__input">
+                <input class="input__item" type="text" placeholder="tu nombre aqui">
+                <input class="input__item" type="text" placeholder="tu canción recomendada">
+            </div>
+
+            <button class="contenedor__button">Enviar recomendación</button>
+
+
+        </section>
+
+        <section class="contenedor regalos">
+
+            <img class="contenedor__icon" src="assets/imagenes/iconos/regalos.webp" alt="">
+            <h3 class="contenedor__title">EL MEJOR REGALO ES TU PRESENCIA</h3>
+            <h5 class="contenedor__direccion contenedor__direccion2">Quiero que sepas que tu presencia es lo más
+                importante en mi fiesta y si deseas hacerme un presente, podrás dejarlo en la mesa de regalos, o podés hacerlo por transferencia a mi cuenta...
+                y recuerda: <br> ¡Tu cariño es el mejor regalo que puedo recibir!
+            </h5>
+
+            <div class="datos">
+                <div class="datos__cuenta">
+                    <h5 class="datos__banco alias">VLUGONES2756.NX.ARS
+</h5>
+                    <button class="datos__button" id="alias">Copiar Alias</button>
+                </div>
+                <div class="datos__cuenta">
+                    <h5 class="datos__banco cbu">4530000800018176961447</h5>
+                    <button class="datos__button" id="cbu">Copiar Cbu</button>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <section class="album contenedor block glow" data-aos="flip-left">
+
+            <div class="album__container" id="albumDigital">
+                <h3 class="title title--album">ETIQUÉTAME</h3>
+                <img class="album__img" src="assets/imagenes/album.webp" id="album" alt="">
+                <h3 class="parrafo parrafo--album">
+                    <!-- Quiero inmortalizar este maravilloso momento, guardando fotos y para ello tengo mi álbum
+                    compartido, ayudame subiendo tus mejores capturas! <br> <br>
+                    <a class="contenedor__button" href="https://photos.app.goo.gl/EtiAe1SVi5U9jHDV7">Toca para Subir
+                        fotos</a> -->
+
+                </h3>
+                 <h3 class="parrafo parrafo--album">
+                   Compartí en Instagram tus fotos o videos y etiquétame <br> <br>
+                    <a class="contenedor__button" href="https://www.instagram.com/valen_lugones_3/?utm_source=ig_web_button_share_sheet">@delfiiidavalos
+
+                        </a>
+
+                </h3>
+
+                
+
+
+                <!-- ----- hastag ------- -->
+
+                <!-- <h4 class="parrafo parrafo__hashtag">#AquiHashtag</h4> -->
+
+            </div>
+
+
+        </section>
+
+        <section class="confirmacion contenedor">
+            <h4 class="confirmacion__title">Por favor confirma tu presencia hasta el día 15 de Octubre del 2026 de 2026 </h4>
+
+            <div class="confirmacion__asistencia">
+                <button class="asistencia__button" id="siAsistire">Si asistiré</button>
+                <button class="asistencia__button" id="noAsistire">No asistiré</button>
+            </div>
+
+            <div class="confirmacion__inputs">
+                <input type="text" class="confirmacion__input" placeholder="Escribe tu nombre aquí...">
+            </div>
+
+            <div class="restriccion">
+                <h4 class="restriccion__title">Mensaje opcional</h4>
+                <textarea class="restriccion__textarea" placeholder="Mensaje opcional"></textarea>
+            </div>
+
+            <button class="contenedor__button contenedor__button6" id="btnConfirmarAsistencia">Confirmar a Jesica</button>
+            <button  class="contenedor__button" id="btnConfirmarAsistencia2">Confirmar a Camila</button>
+
+        </section>
+
+  <section class="frase">
+
+            <img class="frase__star" src="assets/imagenes/star.webp" alt="">
+
+            <h5 class="frase__paragraph2">
+                "Deseo expresar mi agradecimiento a todas las
+personas que me acompañaron durante estos 15
+años, que estuvieron en cada momento y que
+hicieron de mi vida una historia llena de
+recuerdos. <br> Hoy quiero compartir con ustedes
+esta noche tan especial y guardar para siempre
+este recuerdo en mi corazón."
+            </h5>
+
+        </section>
+
+    </main>
+
+
+
+
+    <!-- <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <p class="footer__text">
+                    Página creada por <strong>Luno Digitales</strong>
+                    para los 15 años de <strong>Valentina </strong>.<br>
+                    Todos los derechos reservados. <br>Visítanos en:
+                </p>
+
+            </div>
+
+
+            <a class="footer__site" href="https://www.luno.net.ar" target="_blank" rel="noopener">www.luno.net.ar</a>
+            <div class="footer__social">
+                <p class="footer__follow">Síguenos en nuestras redes</p>
+                <a class="icon-link"
+                    href="https://www.instagram.com/lunodigitales?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    aria-label="Instagram de Luno Digitales">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"
+                            fill="none" />
+                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" fill="none" />
+                        <circle cx="18.2" cy="5.8" r="0.7" fill="currentColor" />
+                    </svg>
+                </a>
+                <a class="icon-link" href="https://www.facebook.com/profile.php?id=61581720891655" target="_blank"
+                    rel="noopener" aria-label="Facebook de Luno Digitales">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </footer> -->
+
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox__content">
+            <button id="closeLightbox" class="lightbox__close">&times;</button>
+            <img src="assets/imagenes/dresscode.webp" alt="Ejemplo Dresscode" class="lightbox__img">
+        </div>
+    </div>
+
+    <script>
+        const btnOpen = document.getElementById('openLightbox');
+        const lightbox = document.getElementById('lightbox');
+        const btnClose = document.getElementById('closeLightbox');
+
+        if (btnOpen && lightbox && btnClose) {
+            btnOpen.addEventListener('click', () => {
+                lightbox.classList.add('active');
+            });
+
+            btnClose.addEventListener('click', () => {
+                lightbox.classList.remove('active');
+            });
+
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.classList.remove('active');
+                }
+            });
+        }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/script.js?v7"></script>
+
+</body>
+
+</html>
